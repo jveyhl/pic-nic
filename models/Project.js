@@ -34,6 +34,12 @@ Project.init(
         key: 'id',
       },
     },
+    version: {
+      type: DataTypes.STRING,
+    },
+    public_id: {
+      type: DataTypes.STRING,
+    }
   },
   {
     sequelize,
