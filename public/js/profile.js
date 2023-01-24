@@ -10,7 +10,13 @@ const newFormHandler = async (event) => {
   if (name && needed_funding && description) {
     const response = await fetch(`/api/projects`, {
       method: 'POST',
-      body: JSON.stringify({ name, needed_funding, description, version, public_id }),
+      body: JSON.stringify({
+        name,
+        needed_funding,
+        description,
+        version,
+        public_id,
+      }),
       headers: {
         'Content-Type': 'application/json',
       },
@@ -83,6 +89,32 @@ const delButtonHandler = async (event) => {
 //   },
 //   false
 // );
+
+var version;
+var public_id;
+
+var myWidget = cloudinary.createUploadWidget(
+  {
+    cloudName: 'do7uphpx7',
+    uploadPreset: 'rca0nvbb',
+  },
+  (error, result) => {
+    if (!error && result && result.event === 'success') {
+      console.log('Done! Here is the image info: ', result.info);
+      var results = result.info;
+      version = results.version;
+      public_id = results.public_id;
+    }
+  }
+);
+
+document.getElementById('upload_widget').addEventListener(
+  'click',
+  function () {
+    myWidget.open();
+  },
+  false
+);
 
 document
   .querySelector('.new-project-form')
