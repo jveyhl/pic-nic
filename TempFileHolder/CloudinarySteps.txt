@@ -1,0 +1,25 @@
+After configuring Cloudinary with API credentials 
+
+In Recipe Model, define new field to store image url as string (done)
+
+In Route/Controller folder, use upload method from cloudinary to upload the image and get back the url for the image 
+
+EXAMPLE -
+
+cloudinary.uploader.upload(req.file.path, function(error, result) {
+    Recipe.create({
+        name: req.body.name,
+        ingredients: req.body.ingredients,
+        instructions: req.body.instructions,
+        image_url: result.secure_url
+    }).then(recipe => {
+        // handle success
+    }).catch(error => {
+        // handle error
+    });
+});
+
+
+The upload method is used to upload the image file from req.file.path and get back the URL of the image in the result.secure_url field.
+
+You can then store the image URL in the image_url field of the recipe model using the create method, and create a new recipe in the database (as shown above, have yet to test!)
