@@ -1,6 +1,6 @@
 After configuring Cloudinary with API credentials 
 
-In Reciple Model, define new field to store image url as string (done)
+In Recipe Model, define new field to store image url as string (done)
 
 In Route/Controller folder, use upload method from cloudinary to upload the image and get back the url for the image 
 

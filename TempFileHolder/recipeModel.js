@@ -25,7 +25,7 @@ Recipe.init(
                 }
                 for (let i=0; i < value.length; i++) {
                     let ingredient= value[i];
-                    if(!ingredient.name || ingredient.quantity || ingredient.measurement) {
+                    if(!ingredient.name || !ingredient.quantity || !ingredient.measurement) {
                         throw new err ('Ingredients need to have a name, quantity, and measurement');
                     }
                     if(typeof ingredient.name !== 'string') {
