@@ -35,7 +35,6 @@
           name='recipe-desc'
         ></textarea>
       </div>
-      <button id='upload_widget' class='cloudinary-button'>Upload files</button>
 
       <script
         src='https://upload-widget.cloudinary.com/global/all.js'
@@ -43,9 +42,10 @@
       ></script>
 
       <div class='form-group'>
-        <button type='submit' class='btn btn-primary'>Create</button>
       </div>
     </form>
+      <button id='upload_widget' class='cloudinary-button'>Upload files</button>
+        <button id="create_recipes" class='btn btn-primary'>Create</button>
   </div>
 
   {{#if recipes.length}}

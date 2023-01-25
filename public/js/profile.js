@@ -115,8 +115,8 @@ document.getElementById('upload_widget').addEventListener(
 );
 
 document
-  .querySelector('.new-recipe-form')
-  .addEventListener('submit', newFormHandler);
+  .getElementById('create_recipes')
+  .addEventListener('click', newFormHandler);
 
 document
   .querySelector('.recipe-list')
