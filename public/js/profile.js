@@ -4,6 +4,8 @@ const newFormHandler = async (event) => {
   const name = document.querySelector('#recipe-name').value.trim();
   const needed_funding = document.querySelector('#recipe-funding').value.trim();
   const description = document.querySelector('#recipe-desc').value.trim();
+  
+  const allergen = document.querySelector('#allergen-desc').value.trim();
 
   if (name && needed_funding && description) {
     const response = await fetch(`/api/recipes`, {
@@ -14,6 +16,7 @@ const newFormHandler = async (event) => {
         description,
         version,
         public_id,
+        allergen
       }),
       headers: {
         'Content-Type': 'application/json',

@@ -4,7 +4,8 @@
     "description": "Pizza is a dish of Italian origin consisting of a usually round, flat base of leavened wheat-based dough topped with tomatoes, cheese, and often various other ingredients, which is then baked at a high temperature, traditionally in a wood-fired oven. ",
     "needed_funding": 5000,
     "version": "1674607268",
-    "public_id": "pizza_l3avle"
+    "public_id": "pizza_l3avle",
+    "recipe_allergen_id": ""
   },
   {
     "name": "Donuts",

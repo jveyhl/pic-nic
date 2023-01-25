@@ -40,6 +40,10 @@ Recipe.init(
     public_id: {
       type: DataTypes.STRING,
     },
+    recipe_allergen_id: {
+      type: DataTypes.INTEGER,
+      references: {model: 'RecipeAllergen', key: 'id'}
+    }
   },
   {
     sequelize,
