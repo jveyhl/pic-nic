@@ -1,5 +1,5 @@
 {
-  "name": "project2_recipes_app",
+  "name": "recipe2_recipes_app",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,15 +10,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jveyhl/project2_recipes_app.git"
+    "url": "git+https://github.com/jveyhl/recipe2_recipes_app.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jveyhl/project2_recipes_app/issues"
+    "url": "https://github.com/jveyhl/recipe2_recipes_app/issues"
   },
-  "homepage": "https://github.com/jveyhl/project2_recipes_app#readme",
+  "homepage": "https://github.com/jveyhl/recipe2_recipes_app#readme",
   "dependencies": {
     "bcrypt": "^5.0.0",
     "cloudinary": "^1.33.0",

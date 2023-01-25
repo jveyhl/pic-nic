@@ -1,9 +1,9 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-class Project extends Model {}
+class Recipe extends Model {}
 
-Project.init(
+Recipe.init(
   {
     id: {
       type: DataTypes.INTEGER,
@@ -39,15 +39,15 @@ Project.init(
     },
     public_id: {
       type: DataTypes.STRING,
-    }
+    },
   },
   {
     sequelize,
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'project',
+    modelName: 'recipe',
   }
 );
 
-module.exports = Project;
+module.exports = Recipe;
