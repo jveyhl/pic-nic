@@ -23,10 +23,6 @@ Recipe.init(
       allowNull: false,
       defaultValue: DataTypes.NOW,
     },
-    needed_funding: {
-      type: DataTypes.FLOAT,
-      allowNull: false,
-    },
     user_id: {
       type: DataTypes.INTEGER,
       references: {
@@ -39,6 +35,21 @@ Recipe.init(
     },
     public_id: {
       type: DataTypes.STRING,
+    },
+    has_nuts: {
+      type: DataTypes.BOOLEAN,
+    },
+    has_gluten: {
+      type: DataTypes.BOOLEAN
+    },
+    has_eggs: {
+      type: DataTypes.BOOLEAN
+    },
+    has_dairy: {
+      type: DataTypes.BOOLEAN
+    },
+    has_shellfish: {
+      type: DataTypes.BOOLEAN
     },
   },
   {

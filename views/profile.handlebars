@@ -18,15 +18,7 @@
           name='recipe-name'
         />
       </div>
-      <div class='form-group'>
-        <label for='recipe-funding'>needed funding ($):</label>
-        <input
-          class='form-input'
-          type='number'
-          id='recipe-funding'
-          name='recipe-funding'
-        />
-      </div>
+
       <div class='form-group'>
         <label for='recipe-desc'>description:</label>
         <textarea
@@ -35,7 +27,19 @@
           name='recipe-desc'
         ></textarea>
       </div>
-      <button id='upload_widget' class='cloudinary-button'>Upload files</button>
+
+      <div class='form-group'>
+        <input type='checkbox' id='nuts' name='nuts' value='true' />
+        <label for='nuts'> Has Nuts</label><br />
+        <input type='checkbox' id='gluten' name='gluten' value='true' />
+        <label for='nuts'> Has Gluten</label><br />
+        <input type='checkbox' id='dairy' name='dairy' value='true' />
+        <label for='nuts'> Has Diary</label><br />
+        <input type='checkbox' id='eggs' name='eggs' value='true' />
+        <label for='nuts'> Has Eggs</label><br />
+        <input type='checkbox' id='shellfish' name='shellfish' value='true' />
+        <label for='nuts'> Has ShellFish</label><br />
+      </div>
 
       <script
         src='https://upload-widget.cloudinary.com/global/all.js'
@@ -43,9 +47,10 @@
       ></script>
 
       <div class='form-group'>
-        <button type='submit' class='btn btn-primary'>Create</button>
       </div>
     </form>
+    <button id='upload_widget' class='cloudinary-button'>Upload files</button>
+    <button id='create_recipes' class='btn btn-primary'>Create</button>
   </div>
 
   {{#if recipes.length}}
