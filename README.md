@@ -1,1 +1,1 @@
-# project2_recipes_app
+# recipe2_recipes_app
