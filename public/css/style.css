@@ -22,3 +22,21 @@ header, .recipe:not(:last-child) {
   font-weight: bold;
   margin-left: -5px;
 }
+
+h1 {
+  font-family: 'Jost', sans-serif;  
+}
+
+#logo {
+  max-width: 100px;
+  max-height: 100px;
+}
+
+#stock {
+  max-width: 300px;
+  max-height: 300px;
+}
+
+.jumbotron {
+  background-color: #e8caa5;
+}
