@@ -2,21 +2,28 @@ const newFormHandler = async (event) => {
   event.preventDefault();
 
   const name = document.querySelector('#recipe-name').value.trim();
-  const needed_funding = document.querySelector('#recipe-funding').value.trim();
   const description = document.querySelector('#recipe-desc').value.trim();
-  
-  const allergen = document.querySelector('#allergen-desc').value.trim();
 
-  if (name && needed_funding && description) {
+  const has_nuts = document.querySelector('#nuts').value
+  const has_gluten = document.querySelector('#gluten').value;
+  const has_eggs = document.querySelector('#eggs').value;
+  const has_dairy = document.querySelector('#dairy').value;
+  const has_shellfish = document.querySelector('#shellfish').value;
+  
+
+  if (name && description) {
     const response = await fetch(`/api/recipes`, {
       method: 'POST',
       body: JSON.stringify({
         name,
-        needed_funding,
         description,
         version,
         public_id,
-        allergen
+        has_nuts,
+        has_dairy,
+        has_gluten,
+        has_shellfish,
+        has_eggs
       }),
       headers: {
         'Content-Type': 'application/json',
