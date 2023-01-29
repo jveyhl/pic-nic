@@ -9,14 +9,10 @@
     <h3>Create a New Recipe:</h3>
 
     <form class='form new-recipe-form'>
+
       <div class='form-group'>
         <label for='recipe-name'>recipe name:</label>
-        <input
-          class='form-input'
-          type='text'
-          id='recipe-name'
-          name='recipe-name'
-        />
+        <input class='form-input' type='text' id='recipe-name' name='recipe-name'/>
       </div>
 
       <div class='form-group'>
@@ -48,9 +44,12 @@
 
       <div class='form-group'>
       </div>
+
     </form>
+
     <button id='upload_widget' class='cloudinary-button'>Upload files</button>
     <button id='create_recipes' class='btn btn-primary'>Create</button>
+    
   </div>
 
   {{#if recipes.length}}

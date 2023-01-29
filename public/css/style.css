@@ -40,3 +40,24 @@ h1 {
 .jumbotron {
   background-color: #e8caa5;
 }
+
+#recipe-name {
+  padding-left: 2%;
+}
+
+#recipe-desc {
+  padding: 3%;
+  text-align-last: left;
+  overflow: hidden;
+  /* textarea.addEventListener('click', function () {
+    this.setSelectionRange(0, 0);
+}); add this to js */
+}
+
+/* .allergenInput {
+
+}
+
+.allergenLabel {
+
+} */
