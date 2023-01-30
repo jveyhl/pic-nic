@@ -40,3 +40,9 @@ h1 {
 .jumbotron {
   background-color: #e8caa5;
 }
+
+.nav-item {
+  font-family: 'Jost', sans-serif;
+  font-size: 1em;
+}
+
