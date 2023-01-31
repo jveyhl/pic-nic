@@ -1,29 +1,19 @@
-<!-- Loop over each object in the recipes array -->
-{{#each recipes as |recipe|}}
-  <div class='row mb-4 recipe'>
-    <div class='col-md-5'>
-      <h2>
-        <!-- Call helper function with triple brackets to render the emoji span as HTML -->
-        {{{get_emoji}}}
-        <a href='/recipe/{{recipe.id}}'>{{recipe.name}}</a>
-      </h2>
-      <p>
-        <span for='img' aria-label='money'>💲</span>
-        <!-- Pass needed_funding value to the helper function -->
-        <span class='dollar-amount'>{{format_amount
-            recipe.needed_funding
-          }}</span>
-        needed!
-      </p>
-      <p>Created by
-        {{recipe.user.name}}
-        on
-        {{format_date recipe.date_created}}</p>
-    </div>
-    <div class='col-md-7'>
-      <p>
-        {{recipe.description}}
-      </p>
-    </div>
+<div class='container'>
+
+  <div class='col-md-12 mb-5 text-center'>
+    <h2>What Do You Want To Make?</h2>
   </div>
-{{/each}}
+
+  <div class="row"> 
+  <!-- Loop over each object in the recipes array -->
+  {{#each recipes as |recipe|}}
+ 
+      <div class='col-sm-12 col-md-6 col-lg-3'>
+        <a href='/recipe/{{recipe.id}}'>
+        <img src="https://res.cloudinary.com/do7uphpx7/image/upload/v{{ recipe.version }}/{{ recipe.public_id }}.jpg" style="width: 100%; height: 100%;" class="img-thumbnail"></img>
+        </a>
+      </div>
+    
+  {{/each}}
+  </div>
+</div>

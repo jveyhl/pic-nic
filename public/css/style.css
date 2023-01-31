@@ -41,6 +41,11 @@ h1 {
   background-color: #e8caa5;
 }
 
+.nav-item {
+  font-family: 'Jost', sans-serif;
+  font-size: 1em;
+}
+
 #recipe-name {
   padding-left: 2%;
 }
@@ -49,15 +54,10 @@ h1 {
   padding: 3%;
   text-align-last: left;
   overflow: hidden;
-  /* textarea.addEventListener('click', function () {
-    this.setSelectionRange(0, 0);
-}); add this to js */
 }
 
-/* .allergenInput {
-
+@media (max-width: 575.98px) {
+  .button-container {
+    margin-bottom: 5%;
+  }
 }
-
-.allergenLabel {
-
-} */
