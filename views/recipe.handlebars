@@ -1,23 +1,35 @@
-<div class="text-center">
-  <h2>{{name}}</h2>
-  <img src="https://res.cloudinary.com/do7uphpx7/image/upload/v{{ version }}/{{ public_id }}.jpg"> </img>
-  <p>{{description}}</p>
-  <p>Created by {{user.name}} on {{format_date date_created}}</p>
-  <p>
-  {{#if has_nuts}}
-   Has Nuts <br>
-  {{/if}}
-  {{#if has_gluten}}
-   Has Gluten <br>
-  {{/if}}
-  {{#if has_eggs}}
-   Has Eggs <br>
-  {{/if}}
-  {{#if has_dairy}}
-   Has Dairy <br>
-  {{/if}}
-  {{#if has_shellfish}}
-   Has Shellfish <br>
-  {{/if}}
-  </p>
-</div>
+    <div class="row d-flex justify-content-center pt-sm-5 pt-md-8">
+        <div class="col-6">
+            <div class="card mb-4 d-flex align-items-center col-12">
+                <div class="card-header text-center"> 
+                    <h4 class="card-title"> {{name}} </h4> 
+                    <p class="card-subtitle">Created by {{user.name}} on {{format_date date_created}} </p>
+                </div>
+                <img class="card-img-top d-flex" src="https://res.cloudinary.com/do7uphpx7/image/upload/v{{ version }}/{{ public_id }}.jpg">
+                <div class="card-body text-center">
+                    <p>{{description}}</p>
+                </div>
+                <ul class="list-group col-12 text-center">
+                    <li class="list-group-item list-group-item-danger">Users! Please be aware of potential allergens in this dish! Even if something isn't being shown, do your due dilligence to ensure that this food is safe for you to eat, if you choose to recreate it!</li>
+                    {{#if has_nuts}}
+                    <li class="list-group-item list-group-item-warning"> CONTAINS NUTS </li>
+                    {{/if}}
+                    {{#if has_gluten}}
+                    <li class="list-group-item list-group-item-warning"> CONTAINS NUTS </li>
+                    {{/if}}
+                    {{#if has_eggs}}
+                    <li class="list-group-item list-group-item-warning"> CONTAINS NUTS </li>
+                    {{/if}}
+                    {{#if has_dairy}}
+                    <li class="list-group-item list-group-item-warning"> CONTAINS NUTS </li>
+                    {{/if}}
+                    {{#if has_shellfish}}
+                    <li class="list-group-item list-group-item-warning"> CONTAINS NUTS </li>
+                    {{/if}}
+                  </ul>
+                
+            </div>
+        </div>
+    </div>
+
+
