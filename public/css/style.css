@@ -55,3 +55,9 @@ h1 {
   text-align-last: left;
   overflow: hidden;
 }
+
+@media (max-width: 575.98px) {
+  .button-container {
+    margin-bottom: 5%;
+  }
+}

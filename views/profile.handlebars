@@ -10,8 +10,8 @@
                     
                     <div class="card-body">
                         <div class="form-group">
-                            <label for="recipe-name"></label>
-                            <input class="form-input col-9 rounded-pill" type="text" id="recipe-name" name="recipe-name" placeholder="Enter the name of your dish here!" />
+                           
+                            <input class="form-input col-12 rounded-pill" type="text" id="recipe-name" name="recipe-name" placeholder="Enter the name of your dish here!" />
                         </div>
                     </div>
                     
@@ -22,8 +22,8 @@
                     <div class="card-header">Recipe Description</div>
                     <div class="card-body">
                         <div class="form-group">
-                            <label for="recipe-name"></label>
-                            <textarea class="form-input col-10 rounded-pill" id="recipe-desc" name="recipe-desc" placeholder="Provide a description of your dish!">
+                            
+                            <textarea class="form-input col-12 rounded-pill" id="recipe-desc" name="recipe-desc" placeholder="Provide a description of your dish!">
 
                             </textarea>
                         </div>
@@ -44,7 +44,7 @@
                             <input class="allergenInput" type='checkbox' id='eggs' name='eggs' value='true' />
                             <label class="allergenLabel" for='nuts'> Has Eggs</label><br />
                             <input class="allergenInput" type='checkbox' id='shellfish' name='shellfish' value='true' />
-                            <labe class="allergenLabel"l for='nuts'> Has ShellFish</label><br />
+                            <label class="allergenLabel"l for='nuts'> Has ShellFish</label><br />
                           </div>
                     </div>
                 </div>
@@ -57,8 +57,10 @@
               
 
             </form>
-            <button id='upload_widget' class='cloudinary-button btn btn-success'>Upload an Image of your dish</button>
+            <div class="button-container">
+            <button id='upload_widget' class='btn btn-success'>Upload an Image of your dish</button>
             <button id='create_recipes' class='btn btn-success'>Create Recipe Post</button>
+            </div>
         </div>
                 
             
@@ -70,7 +72,6 @@
             <div class="card mb-4">
                 <a href="#!"><img class="card-img-top" src="https://dummyimage.com/850x350/dee2e6/6c757d.jpg" alt="..." /></a>
                 <div class="card-body">
-                    <div class="small text-muted">January 1, 2022</div>
                     <h2 class="card-title">Welcome, {{name}}</h2> <!-- {{name}} goes here-->
                     <p class="card-text">Fill in the required fields to post your recipe!  </p>
                     {{!-- <a class="btn btn-success" href="#!">Read more →</a> --}}
