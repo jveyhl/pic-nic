@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { User } = require('../../models');
+const { Recipe, User } = require('../../models');
 
 router.post('/', async (req, res) => {
   try {
@@ -57,5 +57,96 @@ router.post('/logout', (req, res) => {
     res.status(404).end();
   }
 });
+
+
+// router.get('/random', async (req, res) => {
+//   console.log("trying to access users/random");
+
+// try {
+//    var result = await Recipe.findAll({
+//       attributes: {
+//         include: [
+//           [sequelize.fn('COUNT', sequelize.col('id')), 'n_ids']
+//         ]
+//       }
+//       .then(console.log("there are this many recipes: " + result))
+
+//     // }).then(function (result) {
+//     //   var count = result[0].get('n_ids');
+//     //   var random = Math.floor(Math.random() * count);
+//     //   Recipe.findAll({
+//     //     limit: 1,
+//     //     offset: random
+//     //   }).then(function (result) {
+//     //     res.json(result);
+//     //   });
+
+
+//   });
+
+// } catch (err) {
+// res.status(400).json(err);
+// }
+
+// });
+
+
+
+
+  // try {
+    // Get all recipes and JOIN with user data
+    // const recipeData = await Recipe.findAll({
+
+    // });
+
+  //   // Serialize data so the template can read it
+  //   const recipes = recipeData.map((recipe) => recipe.get({ plain: true }));
+
+  //   // Pass serialized data and session flag into template
+  //   res.return(
+  //     recipes
+  //   );
+  // } catch (err) {
+  //   res.status(500).json(err);
+  // }
+
+
+
+
+  router.get('/random', async (req, res) => {
+    console.log("trying to access random");
+    try {
+      // Get all recipes and JOIN with user data
+      const recipeData = await Recipe.findAll({
+        include: [
+          {
+            model: User,
+            attributes: ['name'],
+          },
+        ],
+      });
+  
+      // Serialize data so the template can read it
+      const recipes = recipeData.map((recipe) => recipe.get({ plain: true }));
+  
+      // Pass serialized data and session flag into template
+      // res.render('homepage', {
+      //   recipes,
+      //   logged_in: req.session.logged_in,
+      // });
+      // console.log("recipes is:" + recipes);
+      console.log("length is:" + recipes.length);
+      var random = Math.floor(Math.random() * recipes.length + 1);
+
+      console.log("random is:" + random);
+      res.status(200).json(random);
+    } catch (err) {
+      res.status(500).json(err);
+    }
+  });
+
+
+
+
 
 module.exports = router;
