@@ -38,18 +38,23 @@ Recipe.init(
     },
     has_nuts: {
       type: DataTypes.BOOLEAN,
+      defaultValue: false
     },
     has_gluten: {
-      type: DataTypes.BOOLEAN
+      type: DataTypes.BOOLEAN,
+      defaultValue: false
     },
     has_eggs: {
-      type: DataTypes.BOOLEAN
+      type: DataTypes.BOOLEAN,
+      defaultValue: false
     },
     has_dairy: {
-      type: DataTypes.BOOLEAN
+      type: DataTypes.BOOLEAN,
+      defaultValue: false
     },
     has_shellfish: {
-      type: DataTypes.BOOLEAN
+      type: DataTypes.BOOLEAN,
+      defaultValue: false
     },
   },
   {

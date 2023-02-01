@@ -4,11 +4,20 @@ const newFormHandler = async (event) => {
   const name = document.querySelector('#recipe-name').value.trim();
   const description = document.querySelector('#recipe-desc').value.trim();
 
-  const has_nuts = document.querySelector('#nuts').value
-  const has_gluten = document.querySelector('#gluten').value;
-  const has_eggs = document.querySelector('#eggs').value;
-  const has_dairy = document.querySelector('#dairy').value;
-  const has_shellfish = document.querySelector('#shellfish').value;
+  const has_nuts = document.querySelector('#nuts').checked
+  const has_gluten = document.querySelector('#gluten').checked;
+  const has_eggs = document.querySelector('#eggs').checked;
+  const has_dairy = document.querySelector('#dairy').checked;
+  const has_shellfish = document.querySelector('#shellfish').checked;
+  console.log("NUTS"+has_nuts);
+  console.log('GLUTEN: '+has_gluten);
+
+
+  document.querySelector('textarea').addEventListener('focus', function() {
+    this.selectionStart = 0;
+    this.selectionEnd = 0;
+  });
+  
   
 
   if (name && description) {

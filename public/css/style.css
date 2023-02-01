@@ -56,6 +56,11 @@ h1 {
   overflow: hidden;
 }
 
+.img-thumbnail {
+  max-width: 250px;
+  max-height: 250px;
+}
+
 @media (max-width: 575.98px) {
   .button-container {
     margin-bottom: 5%;
