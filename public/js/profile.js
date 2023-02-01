@@ -133,6 +133,12 @@ document.getElementById('upload_widget').addEventListener(
   false
 );
 
+
+// const textarea = document.getElementById("recipe-desc");
+// textarea.addEventListener("click", function (event) {
+//   this.setSelectionRange(0, 0);
+// });
+
 document
   .getElementById('create_recipes')
   .addEventListener('click', newFormHandler);

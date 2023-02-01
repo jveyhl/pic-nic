@@ -6,9 +6,9 @@
             
                 <!-- Recipe Name Card-->
                 <div class="card mb-3">
-                    <div class="card-header">Add a dish to the pic-nic!</div>
+                    <div class="card-header-mint text-center">Add a dish to the pic-nic!</div>
                     
-                    <div class="card-body">
+                    <div class="card-body card-background-color ">
                         <div class="form-group">
                            
                             <input class="form-input col-12 rounded-pill" type="text" id="recipe-name" name="recipe-name" placeholder="Enter the name of your dish here!" />
@@ -19,11 +19,11 @@
 
                 <!-- Description Card-->
                 <div class="card mb-4">
-                    <div class="card-header">Recipe Description</div>
-                    <div class="card-body">
+                    <div class="card-header-mint text-center">Recipe Description</div>
+                    <div class="card-body card-background-color">
                         <div class="form-group">
                             
-                            <textarea class="form-input col-12 rounded-pill" id="recipe-desc" name="recipe-desc" placeholder="Provide a description of your dish!">
+                            <textarea class="form-input col-12 " id="recipe-desc" name="recipe-desc" placeholder="Provide a description of your dish!">
 
                             </textarea>
                         </div>
@@ -32,8 +32,8 @@
 
                 <!-- Allergen Card-->
                 <div class="card mb-4">
-                    <div class="card-header">Allergens</div>
-                    <div class="card-body">
+                    <div class="card-header-mint text-center">Allergens</div>
+                    <div class="card-body card-background-color">
                         <div class='form-group'>
                             <input class="allergenInput" type='checkbox' id='nuts' name='nuts'/>
                             <label class="allergenLabel" for='nuts'> Has Nuts</label><br />
@@ -58,8 +58,8 @@
 
             </form>
             <div class="button-container">
-            <button id='upload_widget' class='btn btn-success'>Upload an Image of your dish</button>
-            <button id='create_recipes' class='btn btn-success'>Create Recipe Post</button>
+            <button id='upload_widget' class='btn essential-buttons'>Upload an Image of your dish</button>
+            <button id='create_recipes' class='btn essential-buttons'>Create Recipe Post</button>
             </div>
         </div>
                 
@@ -69,11 +69,11 @@
         
         <div class="col-lg-6"> <!--Column 2 Size-->
             
-            <div class="card mb-4">
-                <a href="#!"><img class="card-img-top" src="https://dummyimage.com/850x350/dee2e6/6c757d.jpg" alt="..." /></a>
-                <div class="card-body">
-                    <h2 class="card-title">Welcome, {{name}}</h2> <!-- {{name}} goes here-->
-                    <p class="card-text">Fill in the required fields to post your recipe!  </p>
+            <div class="card mb-4 d-flex align-items-center text-center p-3 profile-welcome ">
+                <a href="#!"><img class="card-img-top profile-placeholder " src="./images/generated_picnic_1.png" alt="..." /></a>
+                <div class="card-body card-background-color">
+                    <h2 class="card-title jost-text">Welcome, {{name}}</h2> <!-- {{name}} goes here-->
+                    <p class="card-text jost-text">Fill in the required fields to post your recipe!  </p>
                     {{!-- <a class="btn btn-success" href="#!">Read more →</a> --}}
                 </div>
             </div>
@@ -85,14 +85,13 @@
     <div class="row d-flex justify-content-center pt-sm-5 pt-md-8">
         <div class="col-8">
             <div class="card mb-4">
-                <div class="card-header text-center"> 
-                    <h4 class="card-title"> {{name}}'s Recipes </h4> 
-                    <p class="card-text">Filler Text/ Delete if nothing </p>
+                <div class="card-header-mint text-center"> 
+                    <h4 class="card-title jost-text "> {{name}}'s Recipes </h4> 
                 </div>
 
                 {{#each recipes as |recipe|}} 
 
-                <div class="card-body border-bottom" >
+                <div class="card-body border-bottom card-background-color" >
                     <div class="row">
                         <div class="col-md-8">
                             <h5><a href="/recipe/{{recipe.id}}"> {{recipe.name}} </a></h5> <!--replace href with /recipe/{{recipe.id}} --> <!-- replace name with {{recipe.name}} -->
