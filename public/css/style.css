@@ -53,7 +53,6 @@ h1 {
 #recipe-desc {
   padding: 3%;
   text-align-last: left;
-  overflow: hidden;
 }
 
 .img-thumbnail {
@@ -82,4 +81,15 @@ h1 {
 
 .card-body {
   border: 1px solid #333;
+}
+
+#recipe-desc{
+  font-size: 12px;
+}
+
+.description-area {
+  max-width: 800px; 
+  overflow-wrap: break-word; 
+  line-height: 2; 
+  text-align: justify;
 }
