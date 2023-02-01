@@ -56,11 +56,12 @@
 
                 {{#each comments as |comment|}} 
 
-                <div class="card-body border-bottom" >
+                <div class="card-body border-bottom">
                     <div class="row">
                         <div class="comment-container">
                             <p class="text-center comment-content-section"> {{comment.comment_content}} </p>
-                            <p class="text-center comment-owner"> Posted by {{comment.user.username}} / {{format_date date_created}} </p> 
+                            <p class="text-center comment-owner"> Posted by {{comment.user.name}}</p> 
+                            <p class="text-center small-text date-subtext dark-line ">{{format_date date_created}}</p>
                         </div>
                     </div>
                 </div>

@@ -66,3 +66,20 @@ h1 {
     margin-bottom: 5%;
   }
 }
+
+.profile-placeholder {
+  width: 350px;
+  height: 350px;
+}
+
+.comment-owner {
+  font-size: 14px
+}
+
+.date-subtext {
+  font-size: 12px;
+}
+
+.card-body {
+  border: 1px solid #333;
+}

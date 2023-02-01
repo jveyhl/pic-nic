@@ -69,8 +69,8 @@
         
         <div class="col-lg-6"> <!--Column 2 Size-->
             
-            <div class="card mb-4">
-                <a href="#!"><img class="card-img-top" src="https://dummyimage.com/850x350/dee2e6/6c757d.jpg" alt="..." /></a>
+            <div class="card mb-4 d-flex align-items-center text-center p-3 ">
+                <a href="#!"><img class="card-img-top profile-placeholder " src="../public/images/generated_picnic_1.png" alt="..." /></a>
                 <div class="card-body">
                     <h2 class="card-title">Welcome, {{name}}</h2> <!-- {{name}} goes here-->
                     <p class="card-text">Fill in the required fields to post your recipe!  </p>
@@ -87,7 +87,6 @@
             <div class="card mb-4">
                 <div class="card-header text-center"> 
                     <h4 class="card-title"> {{name}}'s Recipes </h4> 
-                    <p class="card-text">Filler Text/ Delete if nothing </p>
                 </div>
 
                 {{#each recipes as |recipe|}} 
