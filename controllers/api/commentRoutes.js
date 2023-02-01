@@ -27,13 +27,15 @@ router.get('/:id', (req, res) => {
 });
 
 // Handle a POST request to the root URL and create a new comment
-router.post('/', async (req, res) => {
+router.post('/', withAuth, async (req, res) => {
   try {
+    console.log("Creating new comment" + req);
+    
     const newComment = await Comment.create({
       ...req.body,
       user_id: req.session.user_id,
     });
-    res.json(newComment);
+    res.status(200).json(newComment);
   } catch (err) {
     res.status(500).json(err);
   }

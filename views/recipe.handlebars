@@ -40,7 +40,7 @@
                     <textarea id="comment-content-post" name="comment-body" placeholder="Comment on the recipe!" rows="2"></textarea>
                 </div>
                 <div class="comment-button-container p-2">
-                    <button class="button btn btn-success" type="submit">Add Your Comment</button>
+                    <button id="submit-comment" data-id="{{recipe.id}}" class="button btn btn-success" type="submit">Add Your Comment</button>
                 </div>
             </form>
         </div>
@@ -71,4 +71,4 @@
         </div>
     </div>
 
-    <script src="/public/js/comments.js"></script>
+    <script src="../js/comments.js"></script>
