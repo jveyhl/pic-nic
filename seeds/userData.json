@@ -13,5 +13,30 @@
     "name": "Amiko",
     "email": "amiko2k20@aol.com",
     "password": "password12345"
+  },
+  {
+    "name": "Sam",
+    "email": "sam@gmail.com",
+    "password": "password12345"
+  },
+  {
+    "name": "Sara",
+    "email": "sara@gmail.com",
+    "password": "password12345"
+  },
+  {
+    "name": "Bill",
+    "email": "bill@gmail.com",
+    "password": "password12345"
+  },
+  {
+    "name": "Jennifer",
+    "email": "jennifer@gmail.com",
+    "password": "password12345"
+  },
+  {
+    "name": "Mike",
+    "email": "mike@gmail.com",
+    "password": "password12345"
   }
 ]

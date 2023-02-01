@@ -2,6 +2,41 @@
     {
         "recipe_id": 1,
         "comment_content": "Wow that looks great! Nicely done!",
+        "user_id": 8
+    },
+    {
+        "recipe_id": 2,
+        "comment_content": "Best food ever.",
+        "user_id": 7
+    },
+    {
+        "recipe_id": 3,
+        "comment_content": "Exactly what I've been looking for.",
+        "user_id": 6
+    },
+    {
+        "recipe_id": 4,
+        "comment_content": "OMG!",
+        "user_id": 5
+    },
+    {
+        "recipe_id": 5,
+        "comment_content": "I can't stop eating this!",
+        "user_id": 4
+    },
+    {
+        "recipe_id": 6,
+        "comment_content": "Just like mom used to make",
+        "user_id": 3
+    },
+    {
+        "recipe_id": 7,
+        "comment_content": "AMAZING!!!",
         "user_id": 2
+    },
+    {
+        "recipe_id": 8,
+        "comment_content": "Thank you for this sweet recipe :)",
+        "user_id": 1
     }
 ]

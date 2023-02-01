@@ -1,7 +1,7 @@
 [
   {
     "name": "Pizza",
-    "description": "Pizza is a dish of Italian origin consisting of a usually round, flat base of leavened wheat-based dough topped with tomatoes, cheese, and often various other ingredients, which is then baked at a high temperature, traditionally in a wood-fired oven. ",
+    "description": "1 1/2 cups (355 ml) warm water (105°F-115°F) 1 package (2 1/4 teaspoons) active dry yeast 3 3/4 cups (490g) bread flour 2 tablespoons extra virgin olive oil.",
     "version": "1674607268",
     "public_id": "pizza_l3avle",
     "has_gluten": true
@@ -9,15 +9,51 @@
   },
   {
     "name": "Donuts",
-    "description": "Delicous glazed donuts",
+    "description": "For the donuts 1 1/4 cups whole milk, lukewarm (110°F to 115°F) 1/4 cup granulated sugar 1 packet (2 1/4 teaspoons) active dry yeast.",
     "version": "1674607552",
     "public_id": "donut_oik0cj",
     "has_nuts": true
   },
   {
     "name": "Falafel",
-    "description": "Falafel is a deep-fried ball or patty-shaped fritter in Middle Eastern cuisine made from ground chickpeas, broad beans, or both.",
+    "description": "For the tahini sauce: 1/2 cup tahini (I like Joyva) 1/4 cup Greek yogurt 1/2 lemon, juice only 2 tablespoons olive oil 1/4 to 1/2 cup hot water.",
     "version": "1674607681",
-    "public_id": "Falafel_ggas0b"
+    "public_id": "Falafel_ggas0b",
+    "has_gluten": true
+  },
+  {
+    "name": "Meatloaf",
+    "description": "1/4 cup plus 2 tbsp ketchup, I use organic, 2 tsp Worcestershire sauce, 1/2 small onion, 1 tsp olive oil, 1.3 lb 99% lean ground turkey.",
+    "version": "1675291824",
+    "public_id": "meatloaf_f3aard",
+    "has_gluten": true
+  },
+  {
+    "name": "Salad",
+    "description": "½ cup chopped walnuts, 1 bunch spinach, rinsed and torn into bite-size pieces, ½ cup dried cranberries, ½ cupcrumbled blue cheese.",
+    "version": "1675291839",
+    "public_id": "salad_zihjtv",
+    "has_nuts": true
+  },
+  {
+    "name": "Salmon",
+    "description": "1 ½ teaspoons salt, 1 teaspoon paprika,1 teaspoon ground cardamom, 1 teaspoon ground coriander, ½ teaspoon ground black pepper, ¼ cup grapeseed oil, 2 tablespoons maple syrup, 1 (2 pound) salmon fillet, cut into 3-inch pieces.",
+    "version": "1675291850",
+    "public_id": "salmon_t0iyrp"
+  },
+  {
+    "name": "Pancakes",
+    "description": "1 cup sifted self-rising flour, 1 cup milk, 1 egg, 2 tablespoons vegetable oil.",
+    "version": "1675217965",
+    "public_id": "lokpxwkulrhrkcow0kps",
+    "has_gluten": true,
+    "has_eggs": true,
+    "has_dairy": true
+  },
+  {
+    "name": "Burgers",
+    "description": "2 (1 pound) packages Farmland® Fresh Ground Pork, 2 tablespoons minced yellow onion, 2 teaspoons hot sauce, 1 pinch Kosher salt.",
+    "version": "1674603617",
+    "public_id": "mt9equiq9ii0m9eb8f6w"
   }
 ]
