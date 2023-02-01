@@ -1,12 +1,12 @@
     <div class="row d-flex justify-content-center pt-sm-5 pt-md-8">
         <div class="col-9">
-            <div class="card mb-4 d-flex align-items-center col-12">
-                <div class="card-header text-center"> 
-                    <h4 class="card-title"> {{name}} </h4> 
+            <div class="card mb-4 d-flex align-items-center col-12 card-background-color ">
+                <div class="card-header-mint text-center col-12"> 
+                    <h4 class="card-title jost-text"> {{name}} </h4> 
                     <p class="card-subtitle">Created by {{user.name}} on {{format_date date_created}} </p>
                 </div>
                 <img class="card-img-top d-flex" src="https://res.cloudinary.com/do7uphpx7/image/upload/v{{ version }}/{{ public_id }}.jpg">
-                <div class="card-body text-center">
+                <div class="card-body anti-border text-center">
                     <p class="description-area">{{description}}</p>
                 </div>
                 <ul class="list-group col-12 text-center">
@@ -36,13 +36,22 @@
         <div class="col-6">
             
             <form class="comment-form d-flex justify-content-center" data-recipe_id="{{id}}">
-                <div class="comment-textarea p-2">
-                    <textarea id="comment-content-post" name="comment-body" placeholder="Comment on the recipe!" rows="2"></textarea>
+                <div class="row col-12">
+                    <div class='col-12'>
+                        <div class="comment-textarea col-12 p-2">
+                            <textarea class="col-12" id="comment-content-post" name="comment-body" placeholder="Comment on the recipe!" rows="2"></textarea>
+                        </div>
+                    </div>
                 </div>
-                <div class="comment-button-container p-2">
-                    <button id="submit-comment" data-id="{{recipe.id}}" class="button btn btn-success" type="submit">Add Your Comment</button>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="comment-button-container col-12 p-2">
+                            <button id="submit-comment" data-id="{{recipe.id}}" class="button btn essential-buttons" type="submit">Add Your Comment</button>
+                        </div>
+                    </div>
                 </div>
             </form>
+            
         </div>
     </div>
     {{/if}}
@@ -50,14 +59,14 @@
     <div class="row d-flex justify-content-center pt-sm-5 pt-md-8">
         <div class="col-6"> 
             <div class="card mb-4">
-                <div class="card-header text-center"> 
-                    <h4 class="card-title">Comments</h4> 
+                <div class="text-center"> 
+                    <h4 class="card-title card-header-mint jost-text">Comments</h4> 
                 </div>
 
                 {{#each comments as |comment|}} 
 
-                <div class="card-body border-bottom">
-                    <div class="row">
+                <div class="card-body border-bottom card-background-color">
+                    <div class="row ">
                         <div class="comment-container">
                             <p class="text-center comment-content-section"> {{comment.comment_content}} </p>
                             <p class="text-center comment-owner"> Posted by {{comment.user.name}}</p> 
