@@ -107,6 +107,8 @@ h1 {
   background-image: url(../images/picnic_carpet_bg_1.png);
   background-size:auto;
   background-position: center;
+  max-width: 250px;
+  max-height: 250px;
 }
 
 .main-header {
