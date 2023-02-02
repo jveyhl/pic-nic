@@ -1,4 +1,4 @@
-# Project 2: PicNic
+# Project 2: Pic-Nic
 
 ## Description
 
@@ -19,25 +19,21 @@ N/A
 
 ## Screenshots
 
-* Homepage View
+* Homepage/Dashboard View
 
-![Alt text](/images/1.png)
+![Alt text](./public/images/home.png)
 
 * Login Page 
 
-![Alt text](/images/1.png)
+![Alt text](./public/images/login.png)
 
 * Single Recipe View
 
-![Alt text](/images/1.png)
-
-* Dashboard View
-
-![Alt text](/images/1.png)
+![Alt text](./public/images/single_recipe.png)
 
 * Add Recipe View
 
-![Alt text](/images/1.png)
+![Alt text](./public/images/add_recipe.png)
 
 ## Deployed Application
 
@@ -51,7 +47,9 @@ https://guarded-temple-65765.herokuapp.com/
 
 ## Credits
 
-N/A
+JoshuaOrlandoR
+
+kcl20
 
 ## License
 
